@@ -41,3 +41,7 @@ tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+test {
+	include **/test/java/**
+}

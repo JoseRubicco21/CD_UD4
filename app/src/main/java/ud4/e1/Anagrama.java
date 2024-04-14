@@ -1,18 +1,18 @@
-package ud4.e2;
+package ud4.e1;
 
 import java.util.Arrays;  
 import java.util.Scanner;  
       
-    class Anagrama {  
+  public class Anagrama {  
     private String str1; 
     private String str2;
     private Scanner sc;
     
-    public void Anagrama() {
-    	
+    public Anagrama() {
+    	this.sc = new Scanner(System.in);
     }
     
-    public void Anagrama(String str1, String str2) {
+    public Anagrama(String str1, String str2) {
     	this.str1=str1;
     	this.str2=str2;
     	this.sc = new Scanner(System.in);

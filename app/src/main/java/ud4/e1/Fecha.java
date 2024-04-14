@@ -67,15 +67,10 @@ public class Fecha {
 
 
 	public boolean valida () {
-		// validation usage occures here. Otherwise it's the implementation.
-		// Validates day range.
-		if (!this.diaIsInRange()) return false;
-		// Validates month range.
-		if (!this.mesIsInRange()) return false;
-		// validate if days of the date correspond to the days it should have.
-		if (this.dia > this.calcularDiasDelMes()) return false;
-		// Return true ( Valid ) if none of those conditions were not met.
-		return true;
+		    // Validates day range and month range,
+		    // and if days of the date correspond to the days it should have.
+		    return this.diaIsInRange() && this.dia <= this.calcularDiasDelMes() && this.mesIsInRange();
+
 	}
 
 }
