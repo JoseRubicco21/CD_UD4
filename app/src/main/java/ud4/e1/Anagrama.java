@@ -17,23 +17,6 @@ import java.util.Scanner;
     	this.str2=str2;
     	this.sc = new Scanner(System.in);
     }
-    
-    
-    public String getStr1() {
-		return str1;
-	}
-
-	public void setStr1(String str1) {
-		this.str1 = str1;
-	}
-
-	public String getStr2() {
-		return str2;
-	}
-
-	public void setStr2(String str2) {
-		this.str2 = str2;
-	}
 	
 	public void getInput() {
 		System.out.println("Introduce el primer dato a comprobar");
@@ -62,6 +45,21 @@ import java.util.Scanner;
      		System.out.println(this.str1 + " and " + this.str2 + " are not anagram.");
      	}
     }
-    	
+    
+    public String getStr1() {
+		return str1;
+	}
+
+	public void setStr1(String str1) {
+		this.str1 = str1;
+	}
+
+	public String getStr2() {
+		return str2;
+	}
+
+	public void setStr2(String str2) {
+		this.str2 = str2;
+	}
   
     }  
