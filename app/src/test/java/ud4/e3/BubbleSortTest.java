@@ -28,4 +28,12 @@ public class BubbleSortTest {
 		BubbleSort.Sort(arr);
 		assertEquals(arr, expectedArr);
 	}
+	
+	@Test
+	@ValueSource(ints = {2,3,2})
+	public void repeatedNumbers(int[] arr) {
+		int[] expectedArr = {2,2,3};
+		BubbleSort.Sort(arr);
+		assertEquals(arr, expectedArr);
+	}
 }

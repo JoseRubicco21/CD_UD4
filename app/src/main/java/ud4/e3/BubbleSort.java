@@ -39,8 +39,9 @@ public class BubbleSort {
 				};
 			}
 			
+			// We print the array state here to check the order
 			printArrayState(arr);
-			
+			// If it didn't swap the array should be ordered, so it doesn't need more sorting
 			if(hasSwapped==false) {
 				break;
 			}
