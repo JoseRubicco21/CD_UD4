@@ -79,5 +79,14 @@ public class BubbleSort {
 		BubbleSort.Sort(arr); 
 		System.out.println("Sorted array");
 		System.out.println(Arrays.toString(arr));
+		
+		int arr2[] = {3,2,1};
+		System.out.println(Arrays.toString(arr2));
+		BubbleSort.Sort(arr2);
+		System.out.println(Arrays.toString(arr2));
+		int[]f  = {1,2,3}; 
+		if(Arrays.equals(f, arr2)) {
+			System.out.println("true");
+		}
 	} 
 }
